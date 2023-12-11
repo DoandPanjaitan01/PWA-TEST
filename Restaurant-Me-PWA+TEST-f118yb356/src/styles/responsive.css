@@ -1,0 +1,229 @@
+@media screen and (min-width: 650px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+  }
+
+  .app-bar .navbar-logo h1 {
+    font-size: 1.5em;
+  }
+
+  .app-bar .app-bar__menu {
+    display: none;
+  }
+
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+  }
+
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  }
+
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .main-hero {
+    min-height: 640px;
+  }
+
+  .restos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .resto {
+    grid-template-columns: auto 1fr;
+  }
+
+  .resto .resto__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .resto .resto__overview {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: black;
+  }
+
+  footer #footerTools {
+    flex-direction: row;
+  }
+}
+
+/* @media screen and (min-width: 800px) {
+    .app-bar .navbar-logo h1 {
+        font-size: 2em;
+    }
+} */
+
+@media screen and (min-width: 950px) {
+  .app-bar .navbar-logo h1 {
+    font-size: 2em;
+  }
+
+  .restos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-hero {
+    min-width: 500px;
+  }
+
+  /* .about__container {
+    column-gap: 7rem;
+  } */
+}
+
+@media screen and (min-width: 1200px) {
+  .restos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .main-hero {
+    min-width: 1000px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .restos {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* ========= DARI MAIN ========== */
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding-top: 8rem;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__item {
+    margin-left: var(--mb-5);
+    margin-bottom: 0;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .change-theme {
+    position: initial;
+    margin-left: var(--mb-2);
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0 1rem;
+    text-align: center;
+    background-color: var(--body-color);
+    transition: .4s;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+    border-radius: 0 0 1rem 1rem;
+    z-index: var(--z-fixed);
+  }
+
+  a {
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 2rem;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: .25rem .5rem;
+    border-radius: .5rem;
+  }
+
+  #subscribePushNotification, 
+  #unsubscribePushNotification {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: .25rem .5rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+  }
+
+  .nav__item a {
+    font-size: 2rem;
+  }
+
+  .change-theme {
+    font-size: 2.8rem;
+  }
+
+  button,
+  i {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .main-hero p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--first-color-alt);
+    background-color: var(--container-color);
+    padding: 8px;
+  }
+
+  .resto-item__content p {
+    font-size: 1rem
+  }
+
+}
+
+/* Hero image r  */
+@media only screen and (max-width: 650px) {
+  .main-hero {
+      background:url(../public/images/heros/build/hero-image_2-small.jpg);
+      width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* Yang Large pake default main hero aja*/
+/* @media only screen and (min-width: 651px) {
+  .main-hero {
+      background:url(../public/images/heros/build/hero-image_2-large.jpg);
+      width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+} */

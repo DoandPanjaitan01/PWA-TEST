@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Restaurant Apps">
+
+  <meta name="theme-color" content="#DB0000"/>
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <link rel="manifest" href="./app.webmanifest">
+  <link rel="icon" href="./favicon.png">
+
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <title>Restaurant Apps</title>
+</head>
+
+<body>
+  <a href="#restaurantsList" class="skip-link" tabindex="1" id="skip">Menuju ke konten</a>
+  <label for="skip"> Menuju Konten, Tekan Keyboard</label>
+  <header class="app-bar">
+    <div class="app-bar__menu">
+      <button id="hamburgerButton">☰</button>
+    </div>
+    <div class="navbar-logo">
+      <h1>Hunger Apps</h1>
+    </div>
+    <nav id="navigationDrawer" class="app-bar__navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#/favorite">Favorite</a></li>
+        <li><a href="https://github.com/DoandPanjaitan01">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main tabindex="0" class="app-main" >
+    <section class="main-hero" id="home">
+      <p class="main-hero__text"> Welcome to Restaurant Me </p>
+    </section>
+
+    <section class="app-main__explore" id="favorite">
+      <h2 tabindex="0" id="h2-fav">Explore Restaurant</h2>
+      
+      <div tabindex="0" id="restaurantsList" class="app-main__restaurants-list" >
+        <div id="footerTools">
+          <button id="subscribePushNotification" class="button">Subscribe Push Notification</button>
+          <button id="unsubscribePushNotification" class="button">Unsubscribe Push Notification</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section bd-container">
+    <p class="footer__copy">Copyright &copy; 2023 - Hunger Apps</p>
+    <p class="footer__copy">By Doand Panjaitan</p>
+  </footer>
+</body>
+
+</html>
